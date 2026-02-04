@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HIVENS</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+<header class="header">
+  <a href="." class="header-logo">
+    <img src="./img/HIVENS LOGO.svg" alt="LOGO" class="header-img">
+  </a>
+  <div class="header-content">
+    <div class="header-btns">
+      <a href="#aboutus" class="btn">О нас</a>
+      <img src="./img/rectangle-header.svg" alt="" class="header-rect">
+      <a href="#services" class="btn">Услуги</a>
+      <img src="./img/rectangle-header.svg" alt="" class="header-rect">
+      <a href="#portfolio" class="btn">Портфолио</a>
+      <img src="./img/rectangle-header.svg" alt="" class="header-rect">
+      <a href="#" class="btn-btn" id="contactBtnHeader">Связаться с нами</a>
+    </div>
+  </div>
+</header>
+
+
+
+  <main>
+    <div class="main-container">
+      <div class="left-section">
+        <section class="aboutus">
+          <div class="container">
+            <div class="abotus-title">ТОЧЕЧНЫЕ РЕШЕНИЯ.</div>
+            <div class="aboutus-subtitle">СИСТЕМНЫЙ РЕЗУЛЬТАТ</div>
+          </div>
+        </section>
+        <section class="aboutus-desc">
+          <div class="aboutus-desc-container">
+            <p>
+              <span class="aboutus-desc-hivens">HIVENS</span> в переводе означает «ульи» — символ слаженной работы и
+              отличного результата. Мы учитываем специфику задач и находим лучшие решения, собирая под каждый проект
+              уникальную команду специалистов — и вместе создаём результат, который приносит пользу и ценность, как мёд.
+            </p>
+            <p>
+              За плечами у нас многолетний опыт работы в международных агентствах, и мы предлагаем высокий стандарт
+              качества — быстро, понятно и по гибким условиям.
+            </p>
+          </div>
+        </section>
+      </div>
+      <section class="mobile">
+        <div class="mobile-container">
+          <img src="./img/aboutus/Smartphone PSD Mockup - Green Color 1.jpg" alt="mobile" class="mobile-img">
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <section class="services">
+    <div class="services-container">
+      <div class="service-block">
+        <img src="./img/services/smm-logo.svg" alt="SMM" class="service-logo">
+        <span class="service-text">SMM</span>
+      </div>
+      <div class="service-block">
+        <img src="./img/services/branding-logo.svg" alt="Брендинг" class="service-logo">
+        <span class="service-text">Брендинг</span>
+      </div>
+      <div class="service-block">
+        <img src="./img/services/specprojects-logo.svg" alt="Спецпроекты" class="service-logo">
+        <span class="service-text">Спецпроекты</span>
+      </div>
+      <div class="service-block">
+        <img src="./img/services/communication-strategies-logo.svg" alt="Коммуникационные стратегии"
+          class="service-logo">
+        <span class="service-text">Коммуникационные стратегии</span>
+      </div>
+      <div class="service-block">
+        <img src="./img/services/atl-logo.svg" alt="ATL" class="service-logo">
+        <span class="service-text">ATL</span>
+      </div>
+      <div class="service-block">
+        <img src="./img/services/design-logo.svg" alt="Дизайн" class="service-logo">
+        <span class="service-text">Дизайн</span>
+      </div>
+      <div class="service-block">
+        <img src="./img/services/creative-conception-logo.svg" alt="Креативные концепции" class="service-logo">
+        <span class="service-text">Креативные концепции</span>
+      </div>
+      <div class="service-block">
+        <img src="./img/services/integration-companies-logo.svg" alt="Интеграционные компании" class="service-logo">
+        <span class="service-text">Интеграционные компании</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio">
+    <div class="portfolio-container" id="portfolioContainer">
+
+      <div id="slider-view">
+        <h2 class="portfolio-title">Наше портфолио</h2>
+
+        <button class="slider-arrow prev" id="prevBtn">
+          <img src="./img/arrow-left.svg" alt="<">
+        </button>
+        <button class="slider-arrow next" id="nextBtn">
+          <img src="./img/arrow-right.svg" alt=">">
+        </button>
+      <!-- 1 слайд -->
+        <div class="slides-window">
+          <div class="slides-inner" id="sliderContent">
+            <div class="slide active">
+              <div class="portfolio-grid">
+                <div class="grid-left">
+                  <img src="./img/slides/screenshot1.jpg" alt="Main" class="img-main">
+                </div>
+                <div class="grid-right">
+                  <img src="./img/slides/screenshot2.png" alt="Detail" class="img-side-top">
+                  <div class="grid-right-bottom">
+                    <img src="./img/slides/screnshot3.png" alt="Mini" class="img-side-small">
+                    <a href="javascript:void(0)" class="btn-more" onclick="expandPortfolio()">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-dots" id="dotsContainer"></div>
+      </div>
+      <!-- "подробнее" 1го слайда -->
+<div id="case-view" style="display: none; opacity: 0;">
+  <div class="case-header">
+    <h2 class="portfolio-title" style="margin-left: 0;">Peugeot & Citroёn — Прямые продажи</h2>
+    <button class="close-expand" onclick="collapsePortfolio()">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18 6L6 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
+  </div>
+  <div class="case-grid">
+    <!-- 1 скриншот -->
+    <div class="item img-1">
+      <img src="./img/slides/1img.png" alt="Peugeot Front">
+    </div>
+
+    <!-- 2 скриншот -->
+    <div class="item img-2">
+      <img src="./img/slides/2img.png" alt="People profile">
+    </div>
+
+    <!-- Текст 1 -->
+    <div class="item text-1">
+      Peugeot и Citroën, как love mark’и, напрямую заявляюто своей близости к клиентам. «Для настоящей любвине нужны
+      посредники» — именно такой слоганмы придумали для кампании, посвящённой прямым продажам. Автомобили можно заказать
+      напрямуюс завода, без переплат и участия дилеров — что это,если не любовь?
+    </div>
+
+    <!-- 3 скриншот -->
+    <div class="item img-3">
+      <img src="./img/slides/3img.png" alt="Peugeot Side">
+    </div>
+
+    <!-- 4 скриншот -->
+    <div class="item img-4">
+      <img src="./img/slides/4img.png" alt="Headlight">
+    </div>
+    <!-- Текст 2 -->
+    <div class="item text-2">
+      В качестве визуального решения мы выбрали показать потребителям суть кампании напрямую: изобразили грузовик с узнаваемой
+      шторкой, везущий заветный автомобиль покупателю.
+    </div>
+
+    <!-- Текст 3 -->
+    <div class="item text-3">
+      Фирменный грузовик существуетне только на макете, но и в реальности —и дизайн его, конечно же,повторяет основной
+      макет кампании.На дорогах можно увидеть реальную фуру с фирменной белой шторкой, спрятанным за ней автомобилем и
+      слоганом,что добавляет брендам узнаваемостии создает дополнительный охват.
+    </div>
+  </div>
+</div>
+  <!-- 2 слайд -->
+  <div class="slide">
+    <h3>Слайд 2</h3>
+  </div>
+  <!-- 3 слайд -->
+  <div class="slide">
+    <h3>Слайд 3</h3>
+  </div>
+  <!-- 4 слайд -->
+  <div class="slide">
+    <h3>Слайд 4</h3>
+  </div>
+  <!-- 5 слайд -->
+  <div class="slide">
+    <h3>Слайд 5</h3>
+  </div>
+  <!-- 6 слайд -->
+  <div class="slide">
+    <h3>Слайд 6</h3>
+  </div>
+  <!-- 7 слайд -->
+  <div class="slide">
+    <h3>Слайд 7</h3>
+  </div>
+  </div>
+  </div>
+
+  <div class="portfolio-dots" id="dotsContainer"></div>
+  </div>
+  </section>
+
+  <section class="contacts">
+    <div class="contacts-wrapper">
+
+      <div class="contacts-info">
+        <div class="contact-row">
+          <a href="mailto:svetlana.demenkova@hivens.moscow" class="contact-text">svetlana.demenkova@hivens.moscow</a>
+          <img src="./img/rectangle-header.svg" alt="|" class="contact-sep">
+          <a href="tel:+79165822333" class="contact-text">+7 916 582 23 33</a>
+        </div>
+        <div class="contact-row">
+          <a href="mailto:tamara.shirochenkova@hivens.moscow"
+            class="contact-text">tamara.shirochenkova@hivens.moscow</a>
+          <img src="./img/rectangle-header.svg" alt="|" class="contact-sep">
+          <a href="tel:+79166510694" class="contact-text">+7 916 651 06 94</a>
+        </div>
+      </div>
+
+      <a href="#" class="contact-button">Связаться с нами</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <img src="./img/HIVENS LOGO.svg" alt="LOGO" class="footer-logo">
+      <div class="footer-copyright">
+        Copyright © 2025 Hivens.<br>
+        All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+<div class="modal-overlay" id="contactModal">
+  <div class="modal-content">
+    <button class="modal-close" id="closeModal">
+      <svg width="34" height="34" viewBox="0 0 34 34" fill="none">
+        <circle cx="17" cy="17" r="17" fill="white" />
+        <path d="M11 11L23 23M11 23L23 11" stroke="#5D3A99" stroke-width="2" stroke-linecap="round" />
+      </svg>
+    </button>
+
+    <h3 class="modal-title">Свяжитесь с нами</h3>
+
+    <form class="modal-form">
+      <div class="input-group">
+        <input type="text" placeholder="Ваше имя" class="modal-input">
+        <input type="email" placeholder="Почта" class="modal-input">
+      </div>
+
+      <div class="textarea-wrapper">
+        <textarea placeholder="Краткое описание задачи" class="modal-textarea"></textarea>
+
+        <label class="file-upload-label">
+          <input type="file" id="fileInput" style="display: none;">
+          <div class="textarea-icon">
+            <svg width="34" height="34" viewBox="0 0 34 34" fill="none">
+              <rect width="34" height="34" rx="8" fill="white" />
+              <path d="M12 10H18L22 14V24C22 25.1 21.1 26 20 26H12C10.9 26 10 25.1 10 24V12C10 10.9 10.9 10 12 10Z"
+                stroke="#5D3A99" stroke-width="1.5" />
+              <path d="M18 10V14H22" stroke="#5D3A99" stroke-width="1.5" />
+            </svg>
+          </div>
+        </label>
+      </div>
+
+      <button type="submit" class="modal-submit">Отправить</button>
+    </form>
+  </div>
+</div>
+  
+  <script src="./js/slider.js"></script>
+</body>
+
+</html>
